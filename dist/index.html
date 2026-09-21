@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8385b"><meta name="description" content="遇见，以生辰八字为传统文化参考的交友原型。">
+  <title>遇见 · 八字配对软件</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23e8385b'/%3E%3Cpath d='M20 30S6 22 9 14c3-7 11-2 11 1 0-3 8-8 11-1 3 8-11 16-11 16' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="bazi.css"><script src="vendor/lunar.js" defer></script><script src="bazi-core.js" defer></script><script src="bazi-ui.js" defer></script><script src="app.js" defer></script><script src="local-app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a href="#discover" data-page="bazi" class="brand" aria-label="遇见首页"><span class="brand-mark" data-icon="heart"></span><span>遇见<small>yù jiàn</small></span></a>
+    <div class="side-label">属于你的相遇</div>
+    <nav aria-label="主导航">
+      <button class="nav-item" data-page="bazi"><span data-icon="sparkle"></span>八字合缘</button>
+      <button class="nav-item active" data-page="discover"><span data-icon="compass"></span>发现<span class="nav-end"></span></button>
+      <button class="nav-item" data-page="likes"><span data-icon="heart"></span>喜欢<span class="badge" id="like-count">0</span></button>
+      <button class="nav-item" data-page="people"><span data-icon="user"></span>候选人</button>
+      <button class="nav-item" data-page="profile"><span data-icon="user"></span>我的资料</button>
+    </nav>
+    <div class="sidebar-note"><span class="small-flower">✳</span><p>不用着急，<br>好的相遇值得期待。</p><span>BE YOURSELF. FIND YOUR PERSON.</span></div>
+    <button class="account" data-page="profile"><span class="self-avatar">林</span><span><strong>小林</strong><small>今天也要自在一点</small></span><span data-icon="chevron"></span></button>
+  </aside>
+  <main>
+    <header class="topbar"><div><span class="mini-logo">遇见</span><span class="breadcrumb" id="breadcrumb">发现 / 为你推荐</span></div><div class="topbar-right"><span class="demo-pill">本地版 · 私人资料库</span><span class="location"><span data-icon="pin"></span>上海</span></div></header>
+    <div id="app"></div>
+    <footer>慢慢认识，认真相遇。<span>八字配对 · 传统文化趣味参考</span></footer>
+  </main>
+  <dialog id="dialog"><div id="dialog-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
