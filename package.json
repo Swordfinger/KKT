@@ -1,1 +1,0 @@
-{"name":"yujian-bazi-server","version":"1.0.0","private":true,"scripts":{"start":"node server/local.mjs","test":"node --test tests/backend.test.mjs","build":"node server/build.mjs","db:generate":"drizzle-kit generate"},"dependencies":{"drizzle-orm":"0.44.5"},"devDependencies":{"drizzle-kit":"0.31.4","esbuild":"0.25.10"},"engines":{"node":">=24"}}
